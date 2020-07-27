@@ -1,5 +1,8 @@
 package com.zys.juc.c000;
 
+/*
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.html
+ */
 public class T02_HowToCreateThread {
 	
 	public static void main(String[] args) {

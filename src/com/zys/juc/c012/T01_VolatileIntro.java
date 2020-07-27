@@ -17,10 +17,18 @@ import java.util.concurrent.TimeUnit;
  * http://www.cnblogs.com/nexiyi/p/java_memory_model_and_thread.html
  * 
  * volatile并不能保证多个线程共同修改running变量时所带来的不一致问题，也就是说volatile不能替代synchronized
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
  */
 
 public class T01_VolatileIntro {
+	/*
+	 * Using volatile variables reduces the risk of memory consistency errors, 
+	 * because any write to a volatile variable establishes a happens-before 
+	 * relationship with subsequent reads of that same variable.
+	 * This means that changes to a volatile variable are always visible to other threads. 
+	 */
 	volatile boolean running = true; //对比一下有无volatile的情况下，整个程序运行结果的区别
+	
 	void m() {
 		System.out.println("m start");
 		while(running) {

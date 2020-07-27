@@ -1,5 +1,8 @@
 package com.zys.juc.c000;
-
+/*
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/join.html
+ * */
 public class T03_Sleep_Yield_Join {
 	public static void main(String[] args) {
 //		testSleep();

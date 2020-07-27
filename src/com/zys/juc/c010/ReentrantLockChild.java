@@ -1,5 +1,9 @@
 package com.zys.juc.c010;
 
+/*
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html
+ * See Reentrant Synchronization section.
+ * */
 public class ReentrantLockChild extends ReentrantLock {
 
 	public ReentrantLockChild() {

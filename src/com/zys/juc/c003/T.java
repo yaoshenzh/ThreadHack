@@ -1,5 +1,8 @@
 package com.zys.juc.c003;
 
+/*
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html
+ */
 public class T {
 	
 	private static int count = 10;

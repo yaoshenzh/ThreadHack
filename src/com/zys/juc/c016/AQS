@@ -1,0 +1,6 @@
+@startuml
+	T05_ReentrantLock05 -> ReentrantLock:lock()
+	ReentrantLock -> ReentrantLock:lock()
+	ReentrantLock -> AbstractQueuedSchchronizer:acquire()
+	AbstractQueuedSchchronizer -> ReentrantLock:tryAcquire()
+@enduml
